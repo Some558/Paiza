@@ -1,7 +1,6 @@
 <?php
 $str = "WINGSプロジェクト"
-print mb_substr($str,5,2);//結果:プロ
-print mb_substr($str,5);//結果:プロジェクト
-print mb_substr($str,5,-4);//結果:プロ
-print mb_substr($str,5,2);//結果:プロ
+print mb_strstr($str,"S",true);//結果:WINF
+print mb_strstr($str,"S");//結果:Sプロジェクト
+print mb_strstr($str,"M",false);//結果:false（表示されない）
 ?>
