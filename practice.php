@@ -1,6 +1,9 @@
 <?php
-$str = "WINGSプロジェクト"
-print mb_strstr($str,"S",true);//結果:WINF
-print mb_strstr($str,"S");//結果:Sプロジェクト
-print mb_strstr($str,"M",false);//結果:false（表示されない）
+$str = "にわにはにわにわとりがいる";
+print str_replace("にわ","ニワ",$str,$cnt)."<br />";
+print"{$cnt}個の置き換えをしました。";
 ?>
+
+//結果
+ニワにはニワニワとりがいる
+3個の置き換えをしました。
