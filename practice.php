@@ -1,14 +1,12 @@
 <?php
-$str = ["PHPは良い言語です。","PHPは良いサーバー実行環境です。"];
-$src = ["PHP","良い"];
-$rep = ["PHP 8","素晴らしい"];
-print_r(str_replace($src, $rep, $str, $cnt));
-print"{$cnt}個の置き換えをしました。";
-?>
+$data1 = "Wings project";
+$data2 = "ＷＩＮＧＳプロジェクト";
+$data3 = "FUßball";
 
-//結果
-Array(
-    [0] => PHP8は素晴らしい言語です。
-    [1] => PHP8は素晴らしいサーバー実行環境です。
-)
-4個の置き換えをしました。
+print mb_convert_case($data1, MB_CASE_UPPER); //結果:WINGS PROJECT
+print mb_convert_case($data1, MB_CASE_LOWER); //結果:wings project
+print mb_convert_case($data1, MB_CASE_TITLE); //結果:Wings Project
+print mb_convert_case($data2, MB_CASE_LOWER); //結果:ｗｉｎｇｕｓｕプロジェクト
+print mb_convert_case($data3, MB_CASE_UPPER); //結果:FUSSBALL
+print mb_convert_case($data3, MB_CASE_SIMPLE); //結果:FUßball
+?>
