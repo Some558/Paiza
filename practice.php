@@ -1,5 +1,5 @@
-//mb_convert_kana
+//mb_convert_encoding
 <?php
-$str = "WINGSﾌﾟﾛｼﾞｪｸﾄ"
-print mb_convert_kana($str,"RKV"); //WINGSプロジェクト
+file_put_contents("result.txt",
+mb_convert_encoding("こんにちは、赤ちゃん!","EUC-JP","UTF-8,SJIS,JIS"))
 ?>
