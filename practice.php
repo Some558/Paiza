@@ -1,9 +1,5 @@
-//count_dim
+//array_count_values
 <?php
-$data = [
-    ["X-1","X-2","X-3"]
-    ["Y-1","Y-2","Y-3"]
-    ["Z-1","Z-2","Z-3"]
-];
-print count($data); //結果:3
+$data = ["い"、"ろ"、"は"、"に"、"ほ"、"へ"、"と"、"い"、"ろ"];
+print_r(array_count_values($data)); //結果:Array([い]=>2[ろ]=>2[は]=>1[に]=>1[ほ]=>1[へ][と]=>1)
 ?>
