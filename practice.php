@@ -1,5 +1,12 @@
-//array_count_values
+//array_merge
 <?php
-$data = ["い"、"ろ"、"は"、"に"、"ほ"、"へ"、"と"、"い"、"ろ"];
-print_r(array_count_values($data)); //結果:Array([い]=>2[ろ]=>2[は]=>1[に]=>1[ほ]=>1[へ][と]=>1)
+$ary1 = [1,3,5];
+$ary2 = [2,3,6];
+$result = array_merge($ary1,$ary2);
+print_r($result); //結果:Array([0]=>1 [1]=>3 [2]=>5 [3]=>2 [4]=>3 [5]=>6)
+
+$assoc1 = ["Apple"=>"Red","Orange"=>"Yellow", "Melon"=>"Green"];
+$assoc1 = ["Grape"=>"Purple","Apple"=>"Green", "Strawberry"=>"Red"];
+$result = array_merge($assoc1,$assoc2);
+print_r($result); //結果:Array([Apple]=>Green [Orange]=>Yellow) [Melon]=>Green [Grape]=>Purple [Strawberry]=>Red)
 ?>
