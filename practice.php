@@ -1,9 +1,11 @@
 <?php
-function hoge(?int $value) : void{
-    var_dump($value);
-}
+//test();
+$area = getTriangleArea(8,10);
+print "三角形の面積は{$area}です。";
 
-hoge(100);
-hoge(null);
-hoge();
-//null許容型
+function test(){
+    function getTriangleArea(float $base,float $height): float{
+        return $base *$height / 2;
+    }
+}
+//関数内関数
