@@ -1,9 +1,7 @@
 <?php
-function getValue($map,$key){
-    if(array_key_exists($key,$map)){
-        return $map[$key];
-    }else{
-        return null;
-    }
+function getTriangleArea(float $base, float $height):float{
+    return $base * $height /2;
 }
-//return_null
+
+$area = getTriangleArea(8,10);
+print "三角形の面積は{$area}です。";
