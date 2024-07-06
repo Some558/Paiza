@@ -1,11 +1,17 @@
 <?php
-//test();
-$area = getTriangleArea(8,10);
-print "三角形の面積は{$area}です。";
 
-function test(){
-    function getTriangleArea(float $base,float $height): float{
-        return $base *$height / 2;
-    }
+function repeatCharacter($n, $c) {
+    return str_repeat($c, $n);
 }
-//関数内関数
+
+// 標準入力から整数nを読み取る
+$n = intval(trim(fgets(STDIN)));
+
+// 標準入力から文字cを読み取る
+$c = trim(fgets(STDIN));
+
+// 文字cをn回繰り返した文字列を生成し、出力する
+$result = repeatCharacter($n, $c);
+echo $result . PHP_EOL;
+
+?>
