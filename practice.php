@@ -15,3 +15,5 @@ $result = repeatCharacter($n, $c);
 echo $result . PHP_EOL;
 
 ?>
+
+//標準入力練習
