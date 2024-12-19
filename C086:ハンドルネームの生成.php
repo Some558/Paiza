@@ -1,5 +1,8 @@
-// 標準入力する
+<?php
+
 $S = trim(fgets(STDIN));
+
+// 標準入力する
 
 // 母音を定義
 $vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
@@ -17,3 +20,4 @@ foreach ($S1 as $char) {
 
 // 結果を出力
 echo $consonants . "\n";
+?>
